@@ -1,0 +1,31 @@
+doctype html
+head
+p json url:
+p=jsonURL
+h2#cityName=CityName
+table
+  tr
+    th=day1
+    th=day2
+    th=day3
+    th=day4
+    th=day5
+  tr
+    th=temp1
+    th=temp2
+    th=temp3
+    th=temp4
+    th=temp5
+  tr
+    th=hummidity1
+    th=hummidity2
+    th=hummidity3
+    th=hummidity4
+    th=hummidity5
+form(method='POST' action='')
+  input(name='URLString' placeholder='JSON URL')
+  button(type='submit')  Update link 
+style.
+    table, th, td {
+        border: 1px solid black;
+    }
